@@ -1,0 +1,67 @@
+Front-End
+ - HTML
+ - Javascript
+ - CSS (package/framework?)
+
+Back-End
+ - Node
+ - Run npm init
+ - Install core packages:
+    - Express
+    - mysql2
+    - sequelize
+    - dotenv
+    - bcrypt
+ - possibly require("fs");
+ - MySql
+ - .env
+ - bcrypt (for hashing passwords)
+ - setup boilerplate server.js
+
+Database:
+- Think through and define initial schema (tables)
+    - Create table sequelize models in the models folder
+- Create connection.js in config folder to setup sequelize database connection
+- Setup our .env file with username and password to access the database.
+- Create and run schema.sql file in db folder to create database.
+- TABLES:
+    - WaterIntake
+        - Ounces (can be positive or negative)
+        - CurrentTarget
+        - Timestamp
+        - UserId
+    - User
+        - Id (auto-increment, PK)
+        - FirstName
+        - LastName
+        - Email
+        - PWHash
+    - Preferences
+        - UserId
+        - DailyWaterTarget
+    - PreferenceHistory (optional - not MVP)
+        - UserId
+        - DailyWaterTarget
+        - Set
+
+- Setup GitHub repo
+    - Setup project
+    - use .gitignore for Node
+
+INTERFACE
+- Glass image that indicates progress toward goal visually
+    - Glass fills up with progress.
+    - Be sure to pass data point (i.e. property of data object) to Handlebars template
+    - Have Handlebars contain logic to determine which image to display based on % of goal met.
+- Buttons for -8oz -4oz +4oz +8oz
+
+- Use Bulma - maybe use a theme?  Something with blue.
+- Use Handlebars (MVC)
+
+API Endpoints:
+- POST Login
+- POST Registration
+- POST amount of water to add/subtract
+- GET current day water summary
+- GET 7 day water consumption summary
+- May not need last 3 end-points... might be able to handle all of that with Handlebars.

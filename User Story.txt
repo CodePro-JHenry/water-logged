@@ -1,0 +1,25 @@
+Water-Logged!
+
+AS an individual trying to lose weight and/or stay fit
+I WANT a water tracker application that provides an easy way to set targets and 
+enter how many glasses of water I drink each day
+SO THAT I can easily track my water intake and see if I am staying on track from any 
+device that has Internet access.
+
+REQUIRED FEATURES:
+- Secure Registration/Login
+- Ability for user to set/modify their own personal Daily Water goal with default suggested value of 8 cups/day
+- Responsive interface that works equally well as a mobile application from mobile devices. 
+- Intuitive, and VERY SIMPLE interface for user to add/remove glasses of water drunk
+    - Ability to add water in 1/2 glass (4oz) or full glass increments
+    - Ability to remove water in 1/2 glass (4oz) or full glass (8oz) increments
+- Track each addition of water individually with timestamp (so that we can provide future
+  features such as "stay hydrated" reminders)
+    - Also, with each entry, record currently set "target" in case the user changes their
+      target on a given day.  (This will also allow us to implement more advanced features
+      in the future.)
+- Summary report of water drunk so far for current day with 
+  visual indication of how close the user is to their daily goal.
+- Bar graph summary of last 7 days of water intake
+- User water log data should be stored to server-side storage
+- User data must NOT be accessible by other users!
